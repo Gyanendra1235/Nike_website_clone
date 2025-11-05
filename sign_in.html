@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Sign In</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      width: 400px;
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .logos img {
+      height: 25px;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .country {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .country a {
+      color: #000;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      font-size: 14px;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      font-size: 14px;
+      margin-bottom: 25px;
+      transition: border-color 0.3s;
+    }
+
+    input[type="email"]:focus {
+      border-color: #000;
+    }
+
+    .terms {
+      font-size: 12px;
+      color: #555;
+      text-align: left;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+    .terms a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    button {
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo">
+      <!-- <img src="https://www.nike.com/in/jordan" alt="Jordan Logo"> -->
+    </div>
+
+    <h2>Enter your email to join us or sign in.</h2>
+    <p class="country">India <a href="#">Change</a></p>
+
+    <form>
+      <label for="email">Email*</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <p class="terms">
+        By continuing, I agree to Nike's <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.
+      </p>
+
+      <button type="submit"> <a href="test.html" style="text-decoration:none; color:white;">Continue</a></button>
+    </form>
+  </div>
+</body>
+</html>

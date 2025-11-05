@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Single Window Multi-Page Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <div>
+    <div id="header" class="top-header">
+      <img src="/NIke/nike_logo.png" alt="logo">
+    </div>
+  </div> -->
+    <header>
+    <!-- Left Logo Section -->
+    <div class="logo">
+      <img src="/NIke/nike_logo.png" alt="Nike Logo">
+    </div>
+
+    <!-- Center Navigation Links -->
+    <nav id="nav-1">
+      <a href="#home">Home</a>
+      <a href="NewArrival.html">New & Featured</a>
+      <a href="men.html">Men</a>
+      <a href="women.html">Women</a>
+      <a href="kids.html">Kids</a>
+      <a href="#">Sale</a>
+      <a href="snkrs.html">SNKRS</a>
+    </nav>
+
+
+    <!-- Right Icons and Search -->
+    <div class="right-menu">
+      <a href="https://maps.app.goo.gl/SHhghX3A8qfyn4yy9">Find a Store</a>
+      <a href="#">Help</a>
+      <a href="#">Join Us</a>
+      <a href="sign_in.html">Sign In</a>
+
+      <div class="search-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" class="icon" alt="Search Icon">
+        <input type="text" placeholder="Search">
+      </div>
+
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" class="icon" alt="Heart">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" class="icon" alt="Cart">
+    </div>
+  </header>
+<!--<nav>
+   <button onclick="showPage('home')">HOME</button> 
+  <button onclick="showPage('walking')">WALKING</button>
+  <button onclick="showPage('gym')">GYM</button>
+  <button onclick="showPage('running')">RUNNING</button>
+  <button onclick="showPage('snikkers')">SNKRS</button>
+  <button onclick="showPage('tanish')">TENNIS</button>
+  <button onclick="showPage('golf')">GOLF</button>
+  <button onclick="showPage('road-racing')">ROAD-RACING</button>
+  <button onclick="showPage('basketball')">BASKETBALL</button>
+</nav>-->
+<!-- -------------------------home page------------------------------- -->
+ <section id="home" class="active">
+   <h1><img src="/NIke/scr.png" alt="nike" class="nike-1"></h1>
+           <br>
+        <h2 class="section-title">New Arrivals</h2>
+
+<div class="scroll-container" >
+  <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
+
+  <div class="card-container" id="scrollBox">
+    <div class="card">
+      <img src="/NIke/shoes/scroll-shoes-men/1.avif" alt="Shoe 1">
+      <h3>Nike Shox Ride 2</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 15 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/NIke/shoes/scroll-shoes-men/2.avif" alt="Shoe 1">
+      <h3>Nike Ava Rover</h3>
+      <p style="color: gray;font-size: 15px;">Shoes with Reflective Design Accents</p>
+      <h4>MRP : ₹ 11 895.00</h4>
+    </div>
+     <div class="card">
+      <img src="/NIke/shoes/scroll-shoes-men/3.avif" alt="Shoe 1">
+      <h3>Nike Air Max TL 2.5</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 16 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/NIke/shoes/scroll-shoes-men/4.avif" alt="Shoe 1">
+      <h3>Nike Air Force 1 GORE-TEX</h3>
+      <p style="color: gray;font-size: 15px;">Shoes</p>
+      <h4>MRP : ₹ 14 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/NIke/shoes/scroll-shoes-men/5.avif" alt="Shoe 1">
+      <h3>Nike C1TY Premium CORUDURA</h3>
+      <p style="color: gray;font-size: 15px;">Shoes</p>
+      <h4>MRP : ₹ 9 695.00</h4>
+    </div>
+     <div class="card">
+      <img src="/NIke/shoes/scroll-shoes-men/6.avif" alt="Shoe 1">
+      <h3>Nike Air Force 1'07 WB</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 10 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/NIke/shoes/scroll-shoes-men/7.avif" alt="Shoe 1">
+      <h3>Nike Air Max Moto 2K</h3>
+      <p style="color: gray;font-size: 15px;">Women's Shoes</p>
+      <h4>MRP : ₹ 12 795.00</h4>
+    </div>
+     <div class="card">
+      <img src="/NIke/shoes/scroll-shoes-men/8.avif" alt="Shoe 1">
+      <h3>Nike Air Max Plus</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 14 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/NIke/shoes/scroll-shoes-men/9.avif" alt="Shoe 1">
+      <h3>Nike Quest 6</h3>
+      <p style="color: gray;font-size: 15px;">Men's Road Running Shoes</p>
+      <h4>MRP : ₹ 7 095.00</h4>
+    </div>
+     <div class="card">
+      <img src="/NIke/shoes/scroll-shoes-men/10.avif" alt="Shoe 1">
+      <h3>Nike Go FlyEase</h3>
+      <p style="color: gray;font-size: 15px;">Women's Easy on/off Shoes</p>
+      <h4>MRP : ₹ 11 895.00</h4>
+    </div>
+    
+  </div>
+
+  <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
+</div>
+<br><br>
+<h1><img src="/NIke/src-4.png" alt="nike" class="nike-1"></h1>
+
+ </section>
+
+<!-- -------------------------------men shoes----------------------------------------------------- -->
+
+
+ <!-------------------end--------------- - -->
+<section id="gym" class="active">
+ <div class="product-container">
+
+        <div class="product-card">
+      <img src="/NIke/shoes/gym/M+NIKE+METCON+10.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Metcon 10</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 13,995.00</p>
+      </div>
+    </div>
+       <div class="product-card">
+      <img src="/NIke/shoes/gym/M+NIKE+METCON+10 (1).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Metcon 10</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 13,995.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/M+NIKE+METCON+10+AMP.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Metcon 10 AMP</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 14,995.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/M+NIKE+METCON+10 (2).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Metcon 10</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 13,995.00</p>
+      </div>
+    </div>
+    <!-- ------------------------------------------------ -->
+    <section id="home" class="active">
+        <h1><img src="/NIke/5.png" alt="nike" class="nike-1"></h1>
+    </section>
+    <!-- ---------------------------------------------------- -->
+    <section id="gym">
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/M+NIKE+METCON+10 (3).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Metcon 10</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 13,995.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/NIKE+FREE+METCON+6 (1).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Free Metcon 6</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 10,795.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/NIKE+FREE+METCON+6 (2).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Free Metcon 6</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 10,795.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/NIKE+FREE+METCON+6 (3).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Free Metcon 6</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 10,795.00</p>
+      </div>
+    </div>
+    </section>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/NIKE+FREE+METCON+6.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Free Metcon 6</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 10,795.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/FLEX+EXPERIENCE+RN+12 (1).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Flex Experienc Run 12</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 4,995.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/FLEX+EXPERIENCE+RN+12.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>>Nike Flex Experienc Run 12</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 4,995.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/LEBRON+TR+1 (1).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike LeBorn TR 1</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 11,895.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/LEBRON+TR+1.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike LeBorn TR 1</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 11,895.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/M+AIR+MAX+ALPHA+TRAINER+6 (1).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Air Max Alpha Trainer 12</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 8,495.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/M+AIR+MAX+ALPHA+TRAINER+6.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Air Max Alpha Trainer 12</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 8,945.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/M+NIKE+MC+TRAINER+3 (1).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike MC Trainer 3</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 5,695.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/M+NIKE+MC+TRAINER+3 (2).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike MC Trainer 3</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 5,695.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/M+NIKE+MC+TRAINER+3 (3).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike MC Trainer 3</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 5,695.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/M+NIKE+MC+TRAINER+3.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike MC Trainer 3</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 5,695.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/NIKE+FREE+2025 (1).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Free 2025</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 8,695.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/NIKE+FREE+2025 (2).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Free 2025</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 8,695.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/NIKE+FREE+2025 (3).avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Free 2025</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 8,695.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/NIKE+FREE+2025.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Free 2025</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 8,695.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/NIKE+REACT+SFB+CARBON.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike React SFB Carbon</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 15,295.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/NIKE+REAX+8+TR+MESH.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Reax 8 TR</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 7,495.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/NIke/shoes/gym/NIKE+MOTIVA.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike Motiva</h3>
+        <p>Men's Workout Shoes</p>
+        <p class="price">MRP: ₹ 9,695.00</p>
+      </div>
+    </div>
+</div>
+</section>
+<footer>
+    <footer><div class="footer-inner">
+      <div class="col">
+        <h4>Resource</h4>
+        <ul>
+          <li>Find A Store</li>
+          <li>Become A Member</li>
+          <li>Running Shoe Finder</li>
+          <li>Product Advice</li>
+          <li>Nike Coaching</li>
+          <li>Send Us Feedback</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Help</h4>
+        <ul>
+          <li>Get Help</li>
+          <li>Order Stauts</li>
+          <li>Delivary</li>
+          <li>Returns</li>
+          <li>Payment Options</li>
+          <li>Contect Us On Nike.com Inquiries</li>
+          <li>Contact Us On All Other Inquiries</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Company</h4>
+        <ul>
+          <li>About Nike</li>
+          <li>News</li>
+          <li>careers</li>
+          <li>Investore</li>
+          <li>Sustainability</li>
+          <li>Impact</li>
+          <li>Report a Concern</li>
+        </ul>
+      </div>
+       <div class="col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/nike">Instagram</a></li>
+          <li><a href="https://twitter.com/Nike">Teitter</a></li>
+          <li><a href="https://www.facebook.com/nike">Facebook</a></li>
+          <li><a href="https://www.youtube.com/nike">Youtube</a></li>
+        </ul>
+      </div>
+    </div></footer><br><br>
+    <footer class="footer-last">
+       © 2025 Nike, Inc. All rights reserved <strong>(@_Gyanendra_Namdev)</strong>
+    </footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- ----------------------------Gym section ended---------------------------------------------

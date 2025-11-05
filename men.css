@@ -1,0 +1,44 @@
+/* ====== Men Page Navbar ====== */
+.men-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 100px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.men-navbar h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+.men-links a {
+  margin-left: 40px;
+  text-decoration: none;
+  color:black;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.men-links a:hover {
+  border-bottom: 2px solid #000;
+  padding-bottom: 3px;
+}
+
+/* ====== Example content ====== */
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+#men-links{
+    background-color:white;
+}

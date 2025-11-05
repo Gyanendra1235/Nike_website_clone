@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="men.css">
+<body>
+ <!-- <button class="back-btn" onclick="closePopup()">← Back</button> -->
+</div>
+        <!-- 🧭 Men Page Navbar -->
+  <header class="men-navbar">
+    <h2>Kides</h2>
+    <nav class="men-links" id="men-links">
+     <a href="#Shoes" onclick="showSection('Shoes')">Shoes</a>
+    <a href="#Clothing" onclick="showSection('Clothing')">Clothing</a>
+    <a href="#Bagpacks" onclick="showSection('Bagpacks')">Bagpacks</a>
+    </nav>
+    <div class="right-menu">
+      <a href="#">Find a Store</a>
+      <a href="#">Help</a>
+      <a href="#">Join Us</a>
+      <a href="sign_in.html">Sign In</a>
+
+      <div class="search-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" class="icon" alt="Search Icon">
+        <input type="text" placeholder="Search">
+      </div>
+
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" class="icon" alt="Heart">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" class="icon" alt="Cart">
+    </div>
+  </header>
+  <!-- nav bar -->
+  <!-- <nav>
+   <button onclick="showPage('home')">HOME</button> 
+  <button onclick="showPage('walking')">WALKING</button>
+  <button onclick="showPage('gym')">GYM</button>
+  <button onclick="showPage('running')">RUNNING</button>
+  <button onclick="showPage('snikkers')">SNKRS</button>
+  <button onclick="showPage('tanish')">TENNIS</button>
+  <button onclick="showPage('golf')">GOLF</button>
+  <button onclick="showPage('road-racing')">ROAD-RACING</button>
+  <button onclick="showPage('basketball')">BASKETBALL</button>
+</nav> 
+  👟 Example content (just to show structure) -->
+  <!-- <section id="home" class="active">
+     <h1><img src="/NIke/src-1.png" alt="nike" class="nike-1"></h1>
+           <br>
+  </section> -->
+  <section id="home" class="active">
+   <h1><img src="/NIke/src-1.png" alt="nike" class="nike-1"></h1>
+           <br>
+        <h2 class="section-title">New Arrivals</h2>
+
+<div class="scroll-container" >
+  <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
+
+  <div class="card-container" id="scrollBox">
+    <div class="card">
+      <img src="/kids/k_scroll/1.avif" alt="Shoe 1">
+      <h3>Nike Shox Ride 2</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 15 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/kids/k_scroll/2.avif" alt="Shoe 1">
+      <h3>Nike Shox Ride 2</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 15 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/kids/k_scroll/3.avif" alt="Shoe 1">
+      <h3>Nike Shox Ride 2</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 15 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/kids/k_scroll/4.avif" alt="Shoe 1">
+      <h3>Nike Shox Ride 2</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 15 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/kids/k_scroll/5.avif" alt="Shoe 1">
+      <h3>Nike Shox Ride 2</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 15 995.00</h4>
+    </div>
+     <!-- <div class="card">
+      <img src="/kids/k_scroll/6.avif" alt="Shoe 1">
+      <h3>Nike Shox Ride 2</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 15 995.00</h4>
+    </div> -->
+     <div class="card">
+      <img src="/kids/k_scroll/7.avif" alt="Shoe 1">
+      <h3>Nike Shox Ride 2</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 15 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/kids/k_scroll/8.avif" alt="Shoe 1">
+      <h3>Nike Shox Ride 2</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 15 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/kids/k_scroll/9.avif" alt="Shoe 1">
+      <h3>Nike Shox Ride 2</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 15 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/kids/k_scroll/10.avif" alt="Shoe 1">
+      <h3>Nike Shox Ride 2</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 15 995.00</h4>
+    </div>
+     <div class="card">
+      <img src="/kids/k_scroll/11.avif" alt="Shoe 1">
+      <h3>Nike Shox Ride 2</h3>
+      <p style="color: gray;font-size: 15px;">Men's Shoes</p>
+      <h4>MRP : ₹ 15 995.00</h4>
+    </div>
+     
+    
+  </div>
+
+  <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
+</div>
+<br><br>
+<h1><img src="/kids/1.png" alt="nike" class="nike-1"></h1><br>
+<h1><img src="/kids/2.png" alt="nike" class="nike-1"></h1><br>
+<h1><img src="/kids/3.png" alt="nike" class="nike-1"></h1><br>
+<h1><img src="/kids/4.png" alt="nike" class="nike-1"></h1>
+
+ </section>
+  
+  <!-- --------------------------------------shoes images start------------------------------------------------- -->
+   <section id="Shoes" class="active">
+    <div class="product-container">
+
+          <div class="product-card">
+      <img src="/kids/shoes/1.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+     <div class="product-card">
+      <img src="/kids/shoes/2.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+      <div class="product-card">
+      <img src="/kids/shoes/3.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/4.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/5.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/6.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/7.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/8.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/9.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/10.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/11.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/12.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/13.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/14.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/15.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/16.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/17.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <><div class="product-card">
+      <img src="/kids/shoes/18.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+  <div class="product-card">
+      <img src="/kids/shoes/19.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+  <div class="product-card">
+      <img src="/kids/shoes/20.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/21.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/22.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/23.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/24.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/25.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/26.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/shoes/27.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Shoes</p>
+        <p class="price">MRP: ₹ 3,955.00</p>
+      </div>
+    </div>
+
+      </div>
+   </section>
+   <!-- --------------------------------------shoes images end---------------------------------------------------- -->
+    <!-- ------------------------cloth start-------------------------------- -->
+     <section id="Clothing" class="active">
+    <div class="product-container">
+
+      <div class="product-card">
+      <img src="/kids/cloths/1.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/2.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/3.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/4.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/5.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/6.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/7.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/8.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/9.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/10.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/11.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/12.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/13.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/14.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/15.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/16.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/17.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/18.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/19.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/20.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/21.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/22.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/cloths/23.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Cloth's</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+
+    </div>
+     </section>
+     <!-- ---------------------------cloth end -------------------------------------------------- -->
+      <!-- ----------------------------------------bag strt---------------------- -->
+         <section id="Bagpacks" class="active">
+    <div class="product-container">
+
+       <div class="product-card">
+      <img src="/kids/bag/1.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Bagpackes</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+     <div class="product-card">
+      <img src="/kids/bag/2.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Bagpackes</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+     <div class="product-card">
+      <img src="/kids/bag/3.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Bagpackes</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+     <div class="product-card">
+      <img src="/kids/bag/4.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Bagpackes</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+     <div class="product-card">
+      <img src="/kids/bag/5.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Bagpackes</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+     <div class="product-card">
+      <img src="/kids/bag/6.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Bagpackes</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+     <div class="product-card">
+      <img src="/kids/bag/7.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Bagpackes</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/bag/8.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Bagpackes</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/bag/9.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Bagpackes</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/bag/10.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Bagpackes</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/bag/11.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Bagpackes</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="/kids/bag/12.avif" alt="Nike Field General">
+      <div class="product-info">
+        <p class="new">Just In</p>
+        <h3>Nike promina</h3>
+        <p>Kids Bagpackes</p>
+        <p class="price">MRP: ₹ 1,955.00</p>
+      </div>
+    </div>
+
+    </div>
+     </section>
+       <!-- ---------------------------------------bag end---------------------------------------------------- -->
+
+    <br><br><a href="test.html" class="back-btn">Back to Home</a><br><br>
+    <footer>
+  <div class="footer-inner">
+      <div class="col">
+        <h4>Kids Shoes</h4>
+        <ul>
+          <li>All Kids Shoes</li>
+          <li>Kids Lifestyle Shoes</li>
+          <li>Kids Running Shoes</li>
+          <li>Kids Football Boots</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Kids Clothing</h4>
+        <ul>
+          <li>All Kids Clothing</li>
+          <li>Kids T-Shirts</li>
+          <li>Kids Long-Sleeve Tops</li>
+          <li>Kids Short-Sleeve Tops</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Kids Gear</h4>
+        <ul>
+          <li>All Kids Accessories</li>
+          <li>Kids Bags</li>
+          <li>Kids Hats</li>
+          <li>Kids Socks</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Featured</h4>
+        <ul>
+          <li>All Kids Products</li>
+          <li>New Kids Releases</li>
+          <li>Kids Air Force 1</li>
+          <li>Kids Vapormax</li>
+        </ul>
+      </div>
+    </div><br><br>
+    <footer><div class="footer-inner">
+      <div class="col">
+        <h4>Resource</h4>
+        <ul>
+          <li>Find A Store</li>
+          <li>Become A Member</li>
+          <li>Running Shoe Finder</li>
+          <li>Product Advice</li>
+          <li>Nike Coaching</li>
+          <li>Send Us Feedback</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Help</h4>
+        <ul>
+          <li>Get Help</li>
+          <li>Order Stauts</li>
+          <li>Delivary</li>
+          <li>Returns</li>
+          <li>Payment Options</li>
+          <li>Contect Us On Nike.com Inquiries</li>
+          <li>Contact Us On All Other Inquiries</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Company</h4>
+        <ul>
+          <li>About Nike</li>
+          <li>News</li>
+          <li>careers</li>
+          <li>Investore</li>
+          <li>Sustainability</li>
+          <li>Impact</li>
+          <li>Report a Concern</li>
+        </ul>
+      </div>
+       <div class="col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/nike">Instagram</a></li>
+          <li><a href="https://twitter.com/Nike">Teitter</a></li>
+          <li><a href="https://www.facebook.com/nike">Facebook</a></li>
+          <li><a href="https://www.youtube.com/nike">Youtube</a></li>
+        </ul>
+      </div>
+    </div></footer><br><br>
+    <footer class="footer-last">
+       © 2025 Nike, Inc. All rights reserved <strong>(@_Gyanendra_Namdev)</strong>
+    </footer>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
